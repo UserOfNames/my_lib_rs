@@ -1,0 +1,14 @@
+[package]
+name = "my_fs_utils"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tempfile = { version = "3.27", optional = true }
+
+[features]
+default = []
+tempfile = ["dep:tempfile"]
+
+[lints]
+workspace = true

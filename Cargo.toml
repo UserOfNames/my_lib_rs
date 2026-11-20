@@ -1,0 +1,11 @@
+[workspace]
+resolver = "3"
+members = [ "crates/*" ]
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+undocumented_unsafe_blocks = "warn"
+needless_pass_by_value = "allow"
+new_without_default = "allow"
+needless_continue = "allow"
